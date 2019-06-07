@@ -5,35 +5,110 @@
     <meta charset="UTF-8">
     <title>MULTIMEDIA - OVI (GPI)</title>
     <link rel="stylesheet" href="data/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="data/js/main.js"></script>
 </head>
 
 <body>
     <div class="topnav" id="myTopnav">
-       <div id="banner">
-           <img src="data/img/logoUNAD.png">
-           <h1 id="titulo">OVI- Gerencia de proyectos informáticos</h1>
-       </div>
-        <a href="index.html" class="active">INICIO</a>
-        <a href="lecturas.html">LECTURAS</a>
-        <a href="medios.html">MULTIMEDIA</a>
+        <div id="banner">
+            <img src="data/img/logoUNAD.png">
+            <h1 id="titulo">OVI- Gerencia de proyectos informáticos</h1>
+        </div>
+        <a href="index.html" class="">INICIO</a>
+        <div class="dropdown">
+            <button class="dropbtn">LECTURAS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="lecturas1.html">LECTURA 1</a>
+                <a href="lecturas2.html">LECTURA 2</a>
+                <a href="lecturas3.html">LECTURA 3</a>
+                <a href="lecturas4.html">LECTURA 4</a>
+                <a href="lecturas5.html">LECTURA 5</a>
+            </div>
+        </div>
+        <a href="medios.html" class="active">MULTIMEDIA</a>
         <div class="dropdown">
             <button class="dropbtn">ACTIVIDADES
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">ACTIVIDAD 1</a>
-                <a href="#">ACTIVIDAD 2</a>
-                <a href="#">ACTIVIDAD 3</a>
+                <a href="actividad1.html">ACTIVIDAD 1</a>
+                <a href="actividad2.html">ACTIVIDAD 2</a>
+                <a href="actividad3.html">ACTIVIDAD 3</a>
             </div>
         </div>
         <a href="contactos.html">CONTACTOS</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-
-    <div>
-    
+    <div class="container">
+        <div style="display: block !important" class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <iframe class="frameVideo" src="https://www.youtube.com/embed/JSId1HK4M2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <iframe class="frameVideo" src="https://www.youtube.com/embed/W-MFHHYd-wI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <iframe class="frameVideo" src="https://www.youtube.com/embed/JSId1HK4M2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <iframe class="frameVideo" src="https://www.youtube.com/embed/W-MFHHYd-wI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <iframe class="frameVideo" src="https://www.youtube.com/embed/JSId1HK4M2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <iframe class="frameVideo" src="https://www.youtube.com/embed/W-MFHHYd-wI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h1 class="demo cursor thumb1" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" title="Video 1">1</h1>
+            </div>
+            <div class="column">
+                <h1 class="demo cursor thumb2" src="img_woods.jpg" style="width:100%" onclick="currentSlide(2)" title="Video 2">2</h1>
+            </div>
+            <div class="column">
+                <h1 class="demo cursor thumb1" src="img_woods.jpg" style="width:100%" onclick="currentSlide(3)" title="Video 3">3</h1>
+            </div>
+            <div class="column">
+                <h1 class="demo cursor thumb2" src="img_woods.jpg" style="width:100%" onclick="currentSlide(4)" title="Video 4">4</h1>
+            </div>
+            <div class="column">
+                <h1 class="demo cursor thumb1" src="img_woods.jpg" style="width:100%" onclick="currentSlide(5)" title="Video 5">5</h1>
+            </div>
+            <div class="column">
+                <h1 class="demo cursor thumb2" src="img_woods.jpg" style="width:100%" onclick="currentSlide(6)" title="Video 6">6</h1>
+            </div>
+        </div>
     </div>
+    <footer id="footer">
+        <img src="data/img/logoUNADwhite.png" alt="">
+        <div id="colum1">
+            <p>Sede nacional José Celestino Mutis: Calle 14 sur No. 14 - 23</p><br>
+            <p>PBX: ( +57 1 ) 344 3700 Bogotá D.C., Colombia</p><br>
+            <p>Línea nacional gratuita desde Colombia: 018000115223</p><br>
+            <p>Atención al usuario: atencionalusuario@unad.edu.co</p><br>
+            <p>Anticorrupción: anticorrupcion@unad.edu.co</p>
+        </div>
+        <div id="colum2">
+            <p>Phones ( +1 954 ) 389 2277 - ( +1 954 ) 389 7188</p><br>
+            <p>Toll Free (+1 877 ) 385 5124</p><br>
+            <p>Fax ( +1 954 ) 667 6200</p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -6,13 +6,13 @@
     font-style: normal;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: ITC Franklin Gothic Std;
 }
 
-.franklin{
+.franklin {
     font-family: ITC Franklin Gothic Std;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .active {
-    background-color: #F0B429 ;
+    background-color: #F0B429;
     color: dimgray;
 }
 
@@ -139,15 +139,316 @@
     padding: 0 0 10px 0;
 }
 
-#banner img{
-    width: 20%;
+#banner img {
+    width: 20%; 
 }
 
 #titulo {
     position: relative;
     float: right;
-    line-height: 3;
-    margin: 0 20px 0 0;
+    margin: 1% 20px 0 0;
     color: #005883;
     text-shadow: 3px 4px 4px rgba(146, 139, 141, 1);
 }
+
+#imgCabecera p {
+    font-size: calc(8px + 0.3vw);
+    text-align: right;
+    margin: 0 1% 0 0;
+}
+
+#imgCabecera img {
+    width: 60%;
+    left: 50%;
+    top: -20px;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+#descripcion p {
+    text-align: justify;
+    width: 90%;
+    padding: 1%;
+    border-radius: 1vw;
+    border: 2px solid #005883;
+}
+
+#descripcion {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2% 0 2% 0;
+}
+
+#objetivos {
+    margin: 2% 0 0% 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#listObjetivos {
+    background: #f0b429;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1% 0.5%;
+}
+
+#listObjetivos h1 {
+    color: #f0b429;
+    padding: 0.5vw 1.5vw;
+    margin: 1% 0 1% 0;
+    background: #005883;
+    border-radius: 100vw;
+    text-transform: uppercase;
+}
+
+.objetivos {
+    width: 90%;
+    margin: 20px 0 0 0;
+}
+
+#objGeneral {
+    width: 95%;
+}
+
+#objsEspecificos {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#objsEspecificos h3 {
+    text-align: left;
+    width: 100%;
+}
+
+#acercade {
+    background: #005883;
+    padding: 0.5vw 0 1.5vw 0;
+}
+
+#contentAcercaDe {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contentAcercaDe h1 {
+    color: #005883;
+    padding: 0.5vw 1.5vw;
+    margin: 1% 0 1% 0;
+    background: #f0b429;
+    border-radius: 100vw;
+    text-transform: uppercase;
+}
+
+#contentAcercaDe p {
+    width: 95%;
+    color: whitesmoke;
+    text-align: justify;
+}
+
+#footer {
+    background: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1%;
+}
+
+#footer img {
+    width: 20%;
+    height: 10%;
+}
+
+#colum1 {
+    width: 30%;
+    color: white;
+    font-size: calc(4px + 0.3vw);
+    line-height: 0.7;
+    margin: 0 6%;
+}
+
+#colum2 {
+    width: 30%;
+    color: white;
+    font-size: calc(4px + 0.3vw);
+    line-height: 0.7;
+}
+
+#frameLecturas {
+    width: 95vw;
+    height: 100vh;
+    border: none;
+    border-radius: 0.8vw;
+    background: #005883;
+    padding: 1%;
+}
+
+#lectura {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1% 0;
+    background: floralwhite;
+}
+
+#tituloFrame {
+    padding: 1% 2% 1% 2%;
+    background: #f0b429;
+    border-top-left-radius: 0.8vw;
+    border-top-right-radius: 0.8vw;
+    text-align: center;
+    text-transform: capitalize;
+    color: #005883;
+}
+
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.activeSlide,
+.demo:hover {
+    opacity: 1;
+}
+
+.frameVideo {
+    width: 100vw;
+    height: 70vh;
+}
+
+.thumb1 {
+    text-align: center;
+    padding: 16.66% 0;
+    background: #005883;
+    color: #f0b429;
+}
+
+.thumb2 {
+    text-align: center;
+    padding: 16.66% 0;
+    background: #f0b429;
+    color: #005883;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+.buttonCardProfile {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #f0b429;
+    background-color: #005883;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.linksocial {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.buttonCardProfile:hover,
+.linksocial:hover {
+    opacity: 0.7;
+}
+
+#sectcionContacto {
+    height: 100vh;
+}
+
+

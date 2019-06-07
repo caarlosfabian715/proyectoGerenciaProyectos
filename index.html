@@ -5,35 +5,105 @@
     <meta charset="UTF-8">
     <title>OVI - Gerencia De Proyectos Informaticos</title>
     <link rel="stylesheet" href="data/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="data/js/main.js"></script>
 </head>
 
 <body>
     <div class="topnav" id="myTopnav">
-       <div id="banner">
-           <img src="data/img/logoUNAD.png">
-           <h1 id="titulo">OVI- Gerencia de proyectos informáticos</h1>
-       </div>
+        <div id="banner">
+            <img src="data/img/logoUNAD.png">
+            <h1 id="titulo">OVI- Gerencia de proyectos informáticos</h1>
+        </div>
         <a href="index.html" class="active">INICIO</a>
-        <a href="lecturas.html">LECTURAS</a>
+        <div class="dropdown">
+            <button class="dropbtn">LECTURAS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="lecturas1.html">LECTURA 1</a>
+                <a href="lecturas2.html">LECTURA 2</a>
+                <a href="lecturas3.html">LECTURA 3</a>
+                <a href="lecturas4.html">LECTURA 4</a>
+                <a href="lecturas5.html">LECTURA 5</a>
+            </div>
+        </div>
         <a href="medios.html">MULTIMEDIA</a>
         <div class="dropdown">
             <button class="dropbtn">ACTIVIDADES
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">ACTIVIDAD 1</a>
-                <a href="#">ACTIVIDAD 2</a>
-                <a href="#">ACTIVIDAD 3</a>
+                <a href="actividad1.html">ACTIVIDAD 1</a>
+                <a href="actividad2.html">ACTIVIDAD 2</a>
+                <a href="actividad3.html">ACTIVIDAD 3</a>
             </div>
         </div>
         <a href="contactos.html">CONTACTOS</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-
-    <div>
+    <section id="imgCabecera">
+        <center><a href="#" title="Contador De Visitas">
+        <img style="border: 0px solid; width: 10%; display: inline; position: relative; top:10px;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=264509"></a><br></center>
+        <img src="data/img/imgCabezera.png" alt="Cabecera">
+        <!--<p>Recuperado de https://iconos8.es/ouch</p>-->          
+    </section>
+    <section id="descripcion">
+        <p>Este Objeto Virtual de Información (OVI) que pertenece al curso académico Gerencia de Proyectos Infomáticos código 204039 contiene el material requerido para poder comprender el concepto de Proyecto Informático y la morga de Gestionar este. El material de apoyo contenido permitira conocer la importancia que tiene para las organizaciones actuales y asi mismo poder interiorizar como gestionar y que etapas estan presentes en el ciclo de vida de un proyecto.
+        <br><br>
+        Contará a disposicion material de apoyo audio-visual y lecturas que facilitaran el desarrollo de la temática.</p>    
+    </section>
     
-    </div>
+<section id="objetivos">
+        <div id="listObjetivos">
+            <h1>objetivos de la gerencia de proyectos</h1>
+            <div id="objGeneral">
+                <h3>General</h3><br>
+                <p> Gestionar los Alcances del Proyecto: Realizar las actividades necesarias para garantizar que el proyecto considere todo lo necesario para completarlo en su totalidad.</p><br>
+            </div>
+            <div id="objsEspecificos">
+                <h3>Especificos</h3>
+                <ul class="objetivos">
+                    <li> Gestionar los Costos del Proyecto: Son los trabajos que involucran el control y gestión de las estimaciones y presupuestos para llevar el control de que los trabajos se ejecuten con el presupuesto establecido.</li><br>
+                    <li>Gestionar los Tiempos del Proyectos: Se establece la duración y programación de cada uno de los trabajaos para poder dar seguimiento a los mismos conforme a lo establecido.</li><br>
+                    <li> Gestión de los Riesgos del Proyecto: Prever y dar seguimiento a los procesos relacionados con la planificación de los riesgos que puedan afectar el correcto desempeño de nuestro trabajo.</li><br>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="acercade">
+        <div id="contentAcercaDe">
+            <h1>acerca de gerencia de proyecto informaticos</h1>
+            <p>La dirección y gestión de proyectos es la aplicación del enfoque de sistemas para la administración de tareas tecnológicas complejas o de proyectos cuyos objetivos se establecen explícitamente en términos de tiempo, costes y parámetros de realización.
+            Sin entrar en metodologías de trabajo concretas, podemos decir que para gestionar adecuadamente un proyecto de desarrollo de software es recomendable disponer de las siguientes herramientas:
+            <br><br>
+                1.	Un sistema de planificación que permita organizar el proyecto en función de hitos, tareas y subtareas, con asignación, control de tiempos, recursos materiales y humanos. Donde el sistema de planificación debe permitir también hacer el seguimiento y reajustar la planificación junto con la evolución del proyecto. Este componente debe permitir definir un proyecto como una sucesión de hitos que a su vez se descompongan en tareas y subtareas, con asignación de tiempo y recursos a cada una. Además de definir la planificación, el sistema debe proporcionar mecanismos para hacer el seguimiento y modificar durante la planificación cuando sea necesario. Para que esto sea posible es recomendable disponer de herramientas para llevar el control de los tiempos estimados y empleados para cada tarea; para poder controlar de verdad la evolución del proyecto es importante que las personas que trabajan en el proyecto vayan reportando el tiempo que dedican a cada tarea y actualicen el estado de estas con relativa frecuencia. Para un proyecto normal puede ser suficiente con actualizar semanalmente, aunque el control de tiempos siempre es más fiable si se completa diariamente. 
+                <br><br>
+                2.	Un sistema de gestión documental, que nos servirá para almacenar y mantener los documentos obtenidos o generados durante el desarrollo del proyecto y acceder a ellos cómodamente. Cada hito, tarea o subtarea puede implicar la obtención o generación de documentación (actas de reuniones, documentos de diseño, etc.). Idealmente, el sistema de gestión de proyectos debe permitir que almacenemos esa documentación en el propio sistema.
+                <br><br>
+                3.	Un sistema de control de versiones, que se utilizará para permitir el desarrollo concurrente y para mantener la historia del código fuente y parte de la documentación producida en el proyecto. Al tratarse de proyectos informáticos lo normal es que se trabaje con código fuente y con documentos que van evolucionando a lo largo del desarrollo y que deben ser modificados por múltiples personas, por lo que resulta casi imprescindible disponer de un sistema de control de versiones que permita mantener la historia de los ficheros generados y que más de una persona trabaje concurrentemente sobre el mismo código.
+                <br><br>
+                4.	Un sistema de gestión de incidencias que se empleará para hacer el seguimiento de los errores detectados y sus correcciones, tanto aquellos reportados por los responsables de la prueba del software como por los desarrolladores o los usuarios finales. Este tipo de sistema también se puede utilizar como sistema de seguimiento de tareas de corta duración asociadas a fases del proyecto, a errores detectados o a cambios relacionados con solicitudes de mejora solicitadas por el cliente.
+            </p>
+        </div>
+    </section>
+    
+
+    <footer id="footer">
+        <img src="data/img/logoUNADwhite.png" alt="">
+        <div id="colum1">
+            <p>Sede nacional José Celestino Mutis: Calle 14 sur No. 14 - 23</p><br>
+            <p>PBX: ( +57 1 ) 344 3700 Bogotá D.C., Colombia</p><br>
+            <p>Línea nacional gratuita desde Colombia: 018000115223</p><br>
+            <p>Atención al usuario: atencionalusuario@unad.edu.co</p><br>
+            <p>Anticorrupción: anticorrupcion@unad.edu.co</p>
+        </div>
+        <div id="colum2">
+            <p>Phones ( +1 954 ) 389 2277 - ( +1 954 ) 389 7188</p><br>
+            <p>Toll Free (+1 877 ) 385 5124</p><br>
+            <p>Fax ( +1 954 ) 667 6200</p>
+        </div>
+    </footer>
 </body>
 
 </html>
